@@ -5,7 +5,7 @@ compiler:
 env:
   - TRAVIS_NODE_VERSION="4"
   - TRAVIS_NODE_VERSION="5"
-  - TRAVIS_NODE_VERSION="5" CXX="false"
+  - TRAVIS_NODE_VERSION="5" NO_CXX=1
 os:
   - linux
   - osx
@@ -24,6 +24,7 @@ before_install:
   # compilers
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; AR="gcc-ar-4.8"; RANLIB="gcc-ranlib-4.8"; NM="gcc-nm-4.8"; fi
   - if [ "$CXX" = "clang++" ]; then export NPMOPT=--clang=1; fi
+  - if [ "$NO_CXX" = "1" ]; then export CXX="false"; fi
   # node versions
   - rm -rf ~/.nvm
   - git clone --branch v0.30.2 https://github.com/creationix/nvm.git ~/.nvm
