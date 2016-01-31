@@ -1,0 +1,39 @@
+{
+  "name": "levenshtein-sse",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Anna Henningsen",
+    "email": "sqrt@entless.org"
+  },
+  "description": "Node.js bindings for the levenshtein-sse lib",
+  "keywords": [
+    "levenshtein",
+    "edit distance",
+    "sse",
+    "native"
+  ],
+  "homepage": "https://github.com/addaleax/node-levenshtein-sse",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/addaleax/node-levenshtein-sse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/addaleax/node-levenshtein-sse/issues"
+  },
+  "main": "index.js",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.2.0"
+  },
+  "scripts": {
+    "install": "node-gyp configure build || true",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}

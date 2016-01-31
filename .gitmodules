@@ -1,0 +1,6 @@
+[submodule "levenshtein-sse"]
+	path = levenshtein-sse
+	url = https://github.com/addaleax/levenshtein-sse.git
+[submodule "leven"]
+	path = leven
+	url = https://github.com/addaleax/leven.git

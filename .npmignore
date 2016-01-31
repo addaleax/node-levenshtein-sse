@@ -1,0 +1,7 @@
+build/
+test/
+coverage/
+binding/
+npm-debug.log
+core
+
