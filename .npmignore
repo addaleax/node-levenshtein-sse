@@ -4,4 +4,11 @@ coverage/
 binding/
 npm-debug.log
 core
-
+.gitmodules
+.travis.yml
+leven/package.json
+leven/readme.md
+levenshtein-sse/README.md
+levenshtein-sse/.travis.yml
+levenshtein-sse/Makefile
+levenshtein-sse/test
