@@ -6,7 +6,7 @@
         "src/node-levenshtein-sse.cpp"
       ],
       "include_dirs": ["<!(node -e \"require('nan')\")"],
-      "cflags": ['-march=native']
+      "cflags": ['-march=native -DNDEBUG']
     }
   ]
 }
