@@ -14,6 +14,7 @@ Supports:
  * Strings, Buffers, Typed Arrays, Arrays, etc.
  * SIMD instructions support (when available)
  * Fallback to a very fast JS implementation
+ * Async functions with callbacks or Promises
 
 Usage
 =====

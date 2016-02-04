@@ -17,6 +17,11 @@ if (!native) {
       return native.levenshteinSyncStr(a, b);
     }
     
+    if (Buffer.isBuffer(a) && Buffer.isBuffer(b) && a instanceof Uint8Array) {
+      // Since Node.js v4, Buffers are Uint8Array instances
+      return native.levenshteinSyncUint8(a, b);
+    }
+    
     const objNameA = Object.prototype.toString.call(a);
     const objNameB = Object.prototype.toString.call(b);
     
@@ -41,6 +46,11 @@ if (!native) {
   async = (a, b, cb) => {
     if (typeof a === 'string' && typeof b === 'string') {
       return native.levenshteinAsyncStr(a, b, cb);
+    }
+    
+    if (Buffer.isBuffer(a) && Buffer.isBuffer(b) && a instanceof Uint8Array) {
+      // Since Node.js v4, Buffers are Uint8Array instances
+      return native.levenshteinAsyncUint8(a, b, cb);
     }
     
     const objNameA = Object.prototype.toString.call(a);

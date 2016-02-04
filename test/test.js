@@ -16,7 +16,8 @@ const TypedArrays = {
   "Int32Array":        Int32Array,
   "Uint32Array":       Uint32Array,
   "Float32Array":      Float32Array,
-  "Float64Array":      Float64Array
+  "Float64Array":      Float64Array,
+  "Buffer":            Buffer
 };
 
 const strings = [
