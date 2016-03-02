@@ -35,3 +35,4 @@ install:
   - npm install $NPMOPT
 script:
   - npm test
+  - npm run bench

@@ -31,9 +31,13 @@
   },
   "scripts": {
     "install": "node-gyp configure build || true",
-    "test": "mocha"
+    "test": "mocha",
+    "bench": "matcha"
   },
   "devDependencies": {
+    "leven": "^2.0.0",
+    "levenshtein-edit-distance": "^1.0.0",
+    "matcha": "^0.6.1",
     "mocha": "^2.4.5"
   }
 }
