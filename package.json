@@ -37,7 +37,7 @@
   "devDependencies": {
     "leven": "^2.0.0",
     "levenshtein-edit-distance": "^1.0.0",
-    "matcha": "^0.6.1",
-    "mocha": "^2.4.5"
+    "matcha": "^0.7.0",
+    "mocha": "^3.0.2"
   }
 }
