@@ -3,10 +3,10 @@ compiler:
   - clang
   - gcc
 env:
-  - TRAVIS_NODE_VERSION="4"
-  - TRAVIS_NODE_VERSION="5"
+  - TRAVIS_NODE_VERSION="8"
+  - TRAVIS_NODE_VERSION="8" NO_CXX=1
   - TRAVIS_NODE_VERSION="6"
-  - TRAVIS_NODE_VERSION="6" NO_CXX=1
+  - TRAVIS_NODE_VERSION="4"
 os:
   - linux
   - osx
